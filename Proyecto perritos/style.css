@@ -1,23 +1,53 @@
+
+
 body{
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 
 header {
+  
+    
     background-color: #BBBBBB;
-    padding: 20px 0;
+    height: auto;
+    position: fixed;
+    width: 100%;
+  }
+
+.icono__header{
+    width: 50%;
+    height: auto;
+    border: 5px solid darkblue ;
+    border-radius: 50%  ;
 }
+
+
+
+
 
 .caja{
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+    
+    
     image-resolution: 24px;
+    display: flex;
+    justify-content: space-between;
+    
+
 }
 
+.ul__nav {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+   
+}
+
+
+
 nav{
-    position: absolute;
-    top:110px;
-    right: 0;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 nav li{
@@ -41,13 +71,14 @@ nav a:hover{
 
 
 .banner{
+    
     width: 100%;
 }
 
 .principal{
     padding: 3em 0;
     background: #FEFEFE;
-    width: 940px;
+   
     margin: 0 auto; 
 }
 
@@ -125,14 +156,21 @@ nav a:hover{
 }
 
 footer{
-    text-align: center;
+    
+    display: flex;
+    align-items: center;
     background-color: #c78c19;
-    padding:40px;
+    
 }
 
+
+
 .copyright{
+    display: flex;
+    
     color:#000000;
     font-size: 13px;
     margin:20px;
 }
+
 
