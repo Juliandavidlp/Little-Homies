@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
+    
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Contacto - Perritos Perdidos</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style-cont.css">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Perritos Perdidos</title>        
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <header>
-            <div class="caja">
-                <h1><img src="./multimedia/img/logo.jpg" alt="Logo de Perritos Perdidos"></h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="catalogo.html">Catalogo</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+            <div class="caja">               
+                <img class="banner" src="multimedia/banner/perrito.webp">
+                <nav class="ul__nav">
+                    <ul class="ul__header">
+                        <li class="li__header"><a href="Inicio.html">Inicio</a></li>
+                        <li class="li__header"><a href="Mascotas.html">Mascotas</a></li>
+                        <li class="li__header"><a href="Contacto.html">Contacto</a></li>
+                        <li class="li__header"><a href="Sobrenosotros.html">Sobre nosotros</a></li>                        
                     </ul>
                 </nav>
             </div>
         </header>
+
         <main class="datoscontactos">
             <form>
                 <label for="nombreapellido">Nombre y Apellido</label>
@@ -35,7 +39,7 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
                 
-                <fieldset>
+                
                     <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
                     <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
@@ -44,49 +48,53 @@
                     
                     <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
                     
-                </fieldset>
+                
                
-                <fieldset>
+                
                     <legend>¿En que momento prefiere ser contactado?</legend>
                     <select>
                         <option>Mañana</option>
                         <option>Tarde</option>
                         <option>Noche</option>
                     </select>
-                </fieldset>
+                
                 
                 <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Perritos Perdidos?</label>                
                 
                 <input type="submit" value="Enviar formulario" class="enviar">
-
             </form>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Día</th>
-                        <th>Horario</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>08h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Miércoles</td>
-                        <td>08h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td>08h ~ 20h</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>08h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>08h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>08h ~ 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="./multimedia/img/logo.jpg"  alt="Logo de perritos perdidos">
+            </div>
         </main>
-        <footer>
-            <img src="./multimedia/img/logo.jpg"  alt="Logo de perritos perdidos">
-            <p class="copyright">&copy Copyright Perritos Perdidos - 2023</p>
-        </footer>
+        
+        <footer>            
+                <div class="div__footer">                                   
+                    <p class="copyright">&copy Copyright Grupo CaC - 2023</p>
+                </div> 
+            </footer>
     </body>
 </html>
