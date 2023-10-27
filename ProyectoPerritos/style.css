@@ -1,7 +1,7 @@
 /* Estilos para escritorio (ancho de pantalla mayor a 768px) */
 @media (min-width: 768px) {
     body {
-        font-size: 16px; 
+        font-size: 18px; 
         background-color: #f2f2f2; 
     }
 
@@ -53,7 +53,7 @@ main {
     flex-grow: 1;
   }
 
-  body {
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -117,6 +117,24 @@ footer p{
 .parrafo {
     text-align: center;
 }
+/* ---------
+    WHATSAPP
+    --------- */
+    main .wsp{        
+        z-index: 20;
+        bottom: 20px;
+        right: 20px;
+        position: fixed;
+    }
+    
+    main .wsp:hover{
+        animation: swing;
+        animation-duration: 5s;
+    }
+    
+    main .wsp img{        
+        width: 60px; 
+    }
 
 /************/
 /* Mascotas */
@@ -163,7 +181,7 @@ footer p{
 /************/
 .datoscontactos{
     width: 600px;
-    margin: 0 auto;
+    margin:  auto;
     
 }
 
@@ -181,7 +199,7 @@ form label, form legend{
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 50%;
+    width: 100%;
 }
 
 .checkbox{
@@ -240,7 +258,7 @@ td,th{
 /* Organizar las secciones en filas y columnas */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px; /
 }
 
@@ -338,7 +356,15 @@ p {
     font-weight: bold; /
 }
   
-
+/*****************/
+/* Somosnosotros */
+/****************/
+/* Organizar las secciones en filas y columnas */
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /
+}
 /*
 a {
     text-decoration: none;
