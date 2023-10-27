@@ -199,7 +199,7 @@ form label, form legend{
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
-    width: 60%;
+    width: 50%;
 }
 
 .checkbox{
@@ -230,7 +230,7 @@ table{
 }
 
 .tabla{
-    text-align: center;
+    text-align: none;
 }
 
 thead{
