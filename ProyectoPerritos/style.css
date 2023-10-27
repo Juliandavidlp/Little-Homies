@@ -37,8 +37,13 @@
 /* INDEX */
 /*********/
 
-header{
+/* Agrega el siguiente estilo para que el encabezado ocupe el ancho completo */
+header {
+    background-color: #fdfd96;
+    margin: 0;
+    padding: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 /* Estilos específicos para el contenido del body en todos los archivos HTML */
