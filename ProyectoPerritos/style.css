@@ -44,9 +44,17 @@ header{
 /* Estilos específicos para el contenido del body en todos los archivos HTML */
 main {
     padding: 20px;
-    margin-bottom: 60px; /* Agregamos un margen inferior para dejar espacio al footer */
-    min-height: calc(100vh - 120px); /* Restamos el espacio del header y footer para asegurar una altura mínima */
+    margin-bottom: 60px; /* Añadimos margen inferior para dejar espacio al footer */
+    flex-grow: 1;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+}
   
 .caja{
    width: 98.5vw;
@@ -224,15 +232,46 @@ td,th{
     transform: scale(0.8); 
   }
 
+  .miembro {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.contenido-miembro {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
 .sticky-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     text-align: center;
     padding: 10px;
-    background-color: #fdfd96; /* Cambia el color de fondo a tu preferencia */
+    background-color: #fdfd96;
     color: #84b6f4;
+    position: relative; /* Agregamos posición relativa */
+    clear: both; /* Limpiamos el flotado de los elementos internos */
   }
+  
+
 /*
 a {
     text-decoration: none;
