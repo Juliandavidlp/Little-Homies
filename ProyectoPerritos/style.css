@@ -148,7 +148,7 @@ footer p{
     
 }
 .contenedor .fotos{
-    width: 100%;    
+    width: 90%;    
     display: grid;
     grid-template-columns: repeat (2, 1fr);
     grid-gap: 10px;
@@ -230,7 +230,7 @@ table{
 }
 
 .tabla{
-    text-align: none;
+    text-align: center;
 }
 
 thead{
