@@ -14,14 +14,14 @@ header{
 }
 
 .caja{
-   width: 100vw;
+   width: 98.5vw;
    background-color: #fdfd96;
    text-align: center;
    padding-block: 5px;
 }
 
 .caja img{
-    width: 80px;
+    width: 110px;
     border: 3px solid #84b6f4;
     border-radius: 50%;    
 }
@@ -33,7 +33,7 @@ header{
 .caja nav ul li{
     display: inline-block;
     position: relative;
-    margin-top: 10px; 
+    margin-top: 15px; 
 }
 
 .caja nav ul a{
@@ -44,8 +44,11 @@ header{
 .principal{
     margin-top: 20px;
     margin-left: 15px;
+    text-align: center;
 }
-
+.parrafo img {
+    width: 90%;
+}
 
 .principal h2, p{
     margin-block: 10px;
@@ -63,10 +66,21 @@ footer p{
     padding-block: 10px;
     color: #84b6f4;
 }
+.parrafo {
+    text-align: center;
+}
 
 /************/
 /* Mascotas */
 /************/
+
+.contenedor .adopt {
+        width: 100%;
+        padding: 10px;
+        border: #fdfd96;
+        
+    
+}
 .contenedor .fotos{
     width: 100%;    
     display: grid;
@@ -100,8 +114,9 @@ footer p{
 /* Contacto */
 /************/
 .datoscontactos{
-    width: 640px;
+    width: 600px;
     margin: 0 auto;
+    
 }
 
 form{
