@@ -41,6 +41,13 @@ header{
     width: 100%;
 }
 
+/* Estilos específicos para el contenido del body en todos los archivos HTML */
+main {
+    padding: 20px;
+    margin-bottom: 60px; /* Agregamos un margen inferior para dejar espacio al footer */
+    min-height: calc(100vh - 120px); /* Restamos el espacio del header y footer para asegurar una altura mínima */
+  }
+  
 .caja{
    width: 98.5vw;
    background-color: #fdfd96;
@@ -218,15 +225,14 @@ td,th{
   }
 
 .sticky-footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
-    background-color: #fdfd96;
+    padding: 10px;
+    background-color: #fdfd96; /* Cambia el color de fondo a tu preferencia */
     color: #84b6f4;
   }
-
 /*
 a {
     text-decoration: none;
