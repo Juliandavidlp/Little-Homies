@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/*********/
+/* INDEX */
+/*********/
+
+header{
+    width: 100%;
+}
+
+.caja{
+   width: 100vw;
+   background-color: #fdfd96;
+   text-align: center;
+   padding-block: 5px;
+}
+
+.caja img{
+    width: 80px;
+    border: 3px solid #84b6f4;
+    border-radius: 50%;    
+}
+
+.caja nav ul{
+    list-style: none;       
+}
+
+.caja nav ul li{
+    display: inline-block;
+    position: relative;
+    margin-top: 10px; 
+}
+
+.caja nav ul a{
+    text-decoration: none;
+    color: #84b6f4;
+}
+
+.principal{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+
+.principal h2, p{
+    margin-block: 10px;
+}
+.diferenciales{
+    text-align: center;
+}
+.mapa, .video{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+    background-color: #fdfd96;
+    padding-block: 10px;
+    color: #84b6f4;
+}
+
+/************/
+/* Mascotas */
+/************/
+.contenedor .fotos{
+    width: 100%;    
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "f1 f2";
+    text-align: center;
+    margin-block: 10px;
+    padding-inline: 20px;    
+}
+
+.contenedor .fotos img{
+    width: 200px;
+    padding-top: 10px;    
+}
+
+.fotos .f1,.f2,.f3,.f4{
+    border: 5px solid #84b6f4;
+}
+
+.fotos h3{
+    color: #84b6f4;
+}
+
+.fotos p{
+    text-align: start;
+    margin: 10px;    
+}
+
+/************/
+/* Contacto */
+/************/
+.datoscontactos{
+    width: 640px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin-block: 10px;
+    margin-inline: auto; 
+}
+
+.tabla{
+    text-align: center;
+}
+
+thead{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;    
+}
+
+/* Estilos para el footer común en todos los archivos */
+.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+    color: #84b6f4;
+
+}
+
+/*
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Raleway';
+}
+
+ul, ol {
+    list-style-type: none;
+    
+}
+
+header { 
+   width: 100%;
+    position: fixed;
+    background-color: #ffc44d;
+    
+        
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: whitesmoke ; 
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+.caja {
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+.caja__link {
+    font-size: 1.2em ;
+    padding: 0.8em 1.6em;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.caja__link:hover {
+    background-color: rgb(137, 201, 146);
+}   
+
+.caja__icono {
+    display: flex;
+    align-items: center;
+    border-radius: 100% ;
+    gap: 0.8em;
+}
+
+nav img {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+.enlaces {
+    display: flex;
+    font-size:larger;
+    
+    margin-top: 3rem;
+    gap: 1rem;    
+}
+
+section img {
+    height: 100%;
+    margin-top: 100px;
+}
+
+
+.mapa-contenido {
+    position: relative;
+}
+
+.video, .titulo-principal, .mapa-contenido, .p {
+    display: flex;
+    justify-content: center;
+    position: inherit;
+}
+
+*/
