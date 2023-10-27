@@ -319,6 +319,24 @@ p {
     position: relative; 
     clear: both; /
   }
+
+  .footer {
+    text-align: center; 
+}
+
+.whatsapp-link {
+    display: inline-block; 
+}
+
+.whatsapp-icon {
+    vertical-align: middle; 
+    max-width: 1em; /
+}
+
+
+.whatsapp-link span {
+    font-weight: bold; /
+}
   
 
 /*
