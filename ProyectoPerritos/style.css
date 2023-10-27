@@ -44,7 +44,7 @@ header{
 /* Estilos específicos para el contenido del body en todos los archivos HTML */
 main {
     padding: 20px;
-    margin-bottom: 60px; /* Añadimos margen inferior para dejar espacio al footer */
+    margin-bottom: 60px; 
     flex-grow: 1;
   }
 
@@ -221,22 +221,66 @@ td,th{
     padding: 8px 15px;    
 }
 
-/* AClase para la animación del banner */
+/* Clase para la animación del banner */
 .banner {
     transform-origin: center;
     transition: transform 0.5s; 
   }
   
-  /* Aplica la transformación solo cuando el usuario coloca el mouse sobre la imagen */
+  /* Transformación solo cuando el usuario coloca el mouse sobre la imagen */
   .banner:hover {
     transform: scale(0.8); 
   }
 
-  .miembro {
-    width: 50%;
-    float: left;
+/* Organizar las secciones en filas y columnas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /
+}
+
+/* AMismo tamaño para las secciones */
+.grupo-secciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ATamaño de las imágenes dentro de las secciones */
+.foto-seccion {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Estilo de las secciones */
+.seccion {
     box-sizing: border-box;
     padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+/* Ajuste de espaciado */
+.contenido-seccion {
+    margin: 20px;
+}
+
+/* Mismo tamaño para las secciones */
+.miembro {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Tamaño de las imágenes dentro de las secciones */
+.foto-miembro {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
 .contenido-miembro {
@@ -267,8 +311,8 @@ p {
     padding: 10px;
     background-color: #fdfd96;
     color: #84b6f4;
-    position: relative; /* Agregamos posición relativa */
-    clear: both; /* Limpiamos el flotado de los elementos internos */
+    position: relative; 
+    clear: both; /
   }
   
 
