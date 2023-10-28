@@ -240,55 +240,7 @@
             grid-gap: 20px; /
         }
         
-        /* AMismo tamaño para las secciones */
-        .grupo-secciones {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        /* ATamaño de las imágenes dentro de las secciones */
-        .foto-seccion {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-        }
-        
-        /* Estilo de las secciones */
-        .seccion {
-            box-sizing: border-box;
-            padding: 20px;
-            border: 1px solid #ccc;
-            text-align: center;
-            background-color: #f7f7f7;
-        }
-        
-        /* Ajuste de espaciado */
-        .contenido-seccion {
-            margin: 20px;
-        }
-        
-        /* Mismo tamaño para las secciones */
-        .miembro {
-            box-sizing: border-box;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        
-        /* Tamaño de las imágenes dentro de las secciones */
-        .foto-miembro {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-        }
-        
-        .contenido-miembro {
-            border: 2px solid #3498db;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: left;
+       
         }
         
         img {
@@ -337,14 +289,88 @@
         /*****************/
         /* Somosnosotros */
         /****************/
-        /* Organizar las secciones en filas y columnas */
-        .grid-container1 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px; /
-        
-        }
+ /* Organizar las secciones en filas y columnas */
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px; /
 }
+
+/* AMismo tamaño para las secciones */
+.grupo-secciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ATamaño de las imágenes dentro de las secciones */
+.foto-seccion {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Estilo de las secciones */
+.seccion {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+/* Ajuste de espaciado */
+.contenido-seccion {
+    margin: 20px;
+}
+
+/* Mismo tamaño para las secciones */
+.miembro {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Tamaño de las imágenes dentro de las secciones */
+.foto-miembro {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.contenido-miembro {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.sticky-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fdfd96;
+    color: #84b6f4;
+    position: relative; 
+    clear: both; /
+  }
 
 /* Estilos para tablet (ancho de pantalla entre 481px y 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
@@ -581,6 +607,40 @@
         transform: scale(0.8); 
       }
     
+    
+    }
+    
+    .sticky-footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #fdfd96;
+        color: #84b6f4;
+        position: relative; 
+        clear: both; /
+      }
+    
+      .footer {
+        text-align: center; 
+    }
+    
+    .whatsapp-link {
+        display: inline-block; 
+    }
+    
+    .whatsapp-icon {
+        vertical-align: middle; 
+        max-width: 1em; /
+    }
+    
+    
+    .whatsapp-link span {
+        font-weight: bold; /
+    }
+      
+    /*****************/
+    /* Somosnosotros */
+    /****************/
+
     /* Organizar las secciones en filas y columnas */
     .grid-container {
         display: grid;
@@ -588,13 +648,13 @@
         grid-gap: 20px; /
     }
     
-    /* AMismo tamaño para las secciones */
+    /* Mismo tamaño para las secciones */
     .grupo-secciones {
         display: flex;
         justify-content: space-between;
     }
     
-    /* ATamaño de las imágenes dentro de las secciones */
+    /* Tamaño de las imágenes dentro de las secciones */
     .foto-seccion {
         width: 100%;
         max-width: 200px;
@@ -653,45 +713,6 @@
     p {
         font-size: 16px;
         margin: 5px 0;
-    }
-    
-    .sticky-footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #fdfd96;
-        color: #84b6f4;
-        position: relative; 
-        clear: both; /
-      }
-    
-      .footer {
-        text-align: center; 
-    }
-    
-    .whatsapp-link {
-        display: inline-block; 
-    }
-    
-    .whatsapp-icon {
-        vertical-align: middle; 
-        max-width: 1em; /
-    }
-    
-    
-    .whatsapp-link span {
-        font-weight: bold; /
-    }
-      
-    /*****************/
-    /* Somosnosotros */
-    /****************/
-    /* Organizar las secciones en filas y columnas */
-    .grid-container1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px; /
-    
-    }
 
 }
 
@@ -931,20 +952,43 @@
         transform: scale(0.8); 
       }
     
-    /* Organizar las secciones en filas y columnas */
-    .grid-container {
+   
+    
+      .footer {
+        text-align: center; 
+    }
+    
+    .whatsapp-link {
+        display: inline-block; 
+    }
+    
+    .whatsapp-icon {
+        vertical-align: middle; 
+        max-width: 1em; /
+    }
+    
+    
+    .whatsapp-link span {
+        font-weight: bold; /
+    }
+      
+    /*****************/
+    /* Somosnosotros */
+    /****************/
+     /* Organizar las secciones en filas y columnas */
+     .grid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px; /
     }
     
-    /* AMismo tamaño para las secciones */
+    /* Mismo tamaño para las secciones */
     .grupo-secciones {
         display: flex;
         justify-content: space-between;
     }
     
-    /* ATamaño de las imágenes dentro de las secciones */
+    /* Tamaño de las imágenes dentro de las secciones */
     .foto-seccion {
         width: 100%;
         max-width: 200px;
@@ -1013,36 +1057,8 @@
         position: relative; 
         clear: both; /
       }
-    
-      .footer {
-        text-align: center; 
-    }
-    
-    .whatsapp-link {
-        display: inline-block; 
-    }
-    
-    .whatsapp-icon {
-        vertical-align: middle; 
-        max-width: 1em; /
-    }
-    
-    
-    .whatsapp-link span {
-        font-weight: bold; /
-    }
-      
-    /*****************/
-    /* Somosnosotros */
-    /****************/
-    /* Organizar las secciones en filas y columnas */
-    .grid-container1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px; /
-    
-    }
 }
+/*
 
 *{
     box-sizing: border-box;
@@ -1056,7 +1072,7 @@
 /*********/
 
 /* Agrega el siguiente estilo para que el encabezado ocupe el ancho completo */
-header {
+/*header {
     background-color: #fdfd96;
     margin: 0;
     padding: 0;
@@ -1065,7 +1081,7 @@ header {
 }
 
 /* Estilos específicos para el contenido del body en todos los archivos HTML */
-main {
+/*main {
     padding: 20px;
     margin-bottom: 60px; 
     flex-grow: 1;
@@ -1138,7 +1154,7 @@ footer p{
 /* ---------
     WHATSAPP
     --------- */
-    main .wsp{        
+    /*main .wsp{        
         z-index: 20;
         bottom: 20px;
         right: 20px;
@@ -1158,7 +1174,7 @@ footer p{
 /* Mascotas */
 /************/
 
-.contenedor .adopt {
+/*.contenedor .adopt {
         width: 100%;
         padding: 10px;
         border: #fdfd96;
@@ -1197,7 +1213,7 @@ footer p{
 /************/
 /* Contacto */
 /************/
-.datoscontactos{
+/*.datoscontactos{
     width: 600px;
     margin:  auto;
     
@@ -1263,38 +1279,38 @@ td,th{
 }
 
 /* Clase para la animación del banner */
-.banner {
+/*.banner {
     transform-origin: center;
     transition: transform 0.5s; 
   }
   
   /* Transformación solo cuando el usuario coloca el mouse sobre la imagen */
-  .banner:hover {
+  /*.banner:hover {
     transform: scale(0.8); 
   }
 
 /* Organizar las secciones en filas y columnas */
-.grid-container {
+/*.grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px; /
 }
 
 /* AMismo tamaño para las secciones */
-.grupo-secciones {
+/*.grupo-secciones {
     display: flex;
     justify-content: space-between;
 }
 
 /* ATamaño de las imágenes dentro de las secciones */
-.foto-seccion {
+/*.foto-seccion {
     width: 100%;
     max-width: 200px;
     height: auto;
 }
 
 /* Estilo de las secciones */
-.seccion {
+/*.seccion {
     box-sizing: border-box;
     padding: 20px;
     border: 1px solid #ccc;
@@ -1303,12 +1319,12 @@ td,th{
 }
 
 /* Ajuste de espaciado */
-.contenido-seccion {
+/*.contenido-seccion {
     margin: 20px;
 }
 
 /* Mismo tamaño para las secciones */
-.miembro {
+/*.miembro {
     box-sizing: border-box;
     padding: 20px;
     display: flex;
@@ -1318,7 +1334,7 @@ td,th{
 }
 
 /* Tamaño de las imágenes dentro de las secciones */
-.foto-miembro {
+/*.foto-miembro {
     width: 100%;
     max-width: 200px;
     height: auto;
@@ -1378,12 +1394,12 @@ p {
 /* Somosnosotros */
 /****************/
 /* Organizar las secciones en filas y columnas */
-.grid-container1 {
+/*.grid-container1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px; /
 }
-/*
+
 a {
     text-decoration: none;
     color: inherit;
