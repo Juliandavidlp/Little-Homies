@@ -16,22 +16,22 @@
                     <li class="li__header"><a href="Index.html">Inicio</a></li>
                     <li class="li__header"><a href="Mascotas.html">Mascotas</a></li>
                     <li class="li__header"><a href="Contacto.html">Contacto</a></li>
-                    <li class="li__header"><a href="Sobrenosotros.html">Sobre nosotros</a></li>
+                    <li class="li__header"><a href="Sobrenosotros.html">Sobre Nosotros</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
+        <div class="caja2">
         <main class="datoscontactos">
             <form>
                 <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required>
-
+                <input type="text" id="nombreapellido" class="input-padron" id="nombreapellido">
+        
                 <label for="correoelectronico">Correo Electrónico</label>
                 <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
                 <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+                <input type="tel" id="telefono" class="input-padron" required placeholder="+549 011 XXX XXXX">
 
                 <label for="mensaje">Mensaje</label>
                 <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
@@ -39,31 +39,34 @@
                 
                     <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
-                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-                    
-                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
-                    
-                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
-                    
+                    <label for="radio-email">
+                    <input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefono">
+                    <input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label> 
+
+                    <label for="radio-whatsapp">
+                    <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    <br>
                 
                
                 
-                    <legend>¿En que momento prefiere ser contactado?</legend>
+                    <legend>¿Cuándo prefiere ser contactado?</legend>
                     <select>
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
+                        <option>De mañana</option>
+                        <option>A la tarde</option>
+                        <option>A la noche</option>
                     </select>
                 
                 
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Perritos Perdidos?</label>                
+                <label class="checkbox"><input type="checkbox" checked>Recibir novedades de Perritos Perdidos</label>                
                 
                 <input type="submit" value="Enviar formulario" class="enviar">
             </form>
-
+        </div>
             <div class="tabla">
                 <table>
-                    <h4> PARA VISITAR EL REFUGIO</h4>
+                    <h4> Horarios del refugio</h4>
                     <thead>
                         <tr>
                             <th>Día</th>
@@ -73,23 +76,23 @@
                     <tbody>
                         <tr>
                             <td>Lunes</td>
-                            <td>08h ~ 20h</td>
+                            <td>08 a 20 hs.</td>
                         </tr>
                         <tr>
                             <td>Miércoles</td>
-                            <td>08h ~ 20h</td>
+                            <td>17 a 20 hs.</td>
                         </tr>
                         <tr>
                             <td>Viernes</td>
-                            <td>08h ~ 20h</td>
+                            <td>08 a 20 hs.</td>
                         </tr>
                     </tbody>
                 </table>
-                 </div>
-            <div class="wsp">
-                <a href="https://www.whatsapp.com/" target="_blank"> <img src="./multimedia/img/logowhat.png" alt="">
-                </a>
             </div>
+        <div class="wsp">
+            <a href="https://www.whatsapp.com/" target="_blank"> <img src="./multimedia/img/logowhat.png" alt="">
+            </a>
+        </div>
         </main>
         
         <footer>
@@ -99,6 +102,9 @@
                            Todos los derechos reservados<br>
                          &copy Copyright Grupo CaC - 2023</p>
                     </div>
-                </footer>
+            </div>
+        </footer>
     </body>
+
+
 </html>
