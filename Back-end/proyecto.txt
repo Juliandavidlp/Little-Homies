@@ -1,0 +1,7 @@
+project "Little_Homies"
+Python 3.12.0
+Django 4.2.7
+
+http://127.0.0.1:8000/
+
+python manage.py startapp app(nombredelaaplicación)
