@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perritos Perdidos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="caja">
+            <img class="banner" src="multimedia/banner/perrito.webp">
+            <nav class="ul__nav">
+                <ul class="ul__header">
+                    <li class="li__header"><a href="index.html">Inicio</a></li>
+                    <li class="li__header"><a href="mascotas.html">Mascotas</a></li>
+                    <li class="li__header"><a href="contacto.html">Contacto</a></li>
+                    <li class="li__header"><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="grid-container" id="app">
+    </section>
+    <section id="list" class="container">
+        <div class="contenedor">
+            <img class="adopt" src="multimedia/banner/perritoadopt.jpg">
+        <h2 class="search-title">Listado de peliculas</h2>
+        <table id="list-table-mascotas" class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Banner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="mascota in mascotas">
+                    <td>{{mascota.title}}</td>
+                    <td>{{mascota.descripción}}</td>
+                    <td>{{mascota.año_de_nacimiento}}</td>
+                    <td>
+                        <img v-bind:src="api_server+mascota.banner" class="img-list">
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+        <section class="diferenciales"> 
+            <h2 class="titulo-principal">Nuestros Animales</h2><br>
+            <div class="video">
+                <iframe width="80%" height="400" src="https://www.youtube.com/embed/y6lTLfzom5E?si=gEkTcsbxVM3R0PtZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            </div>     
+            <div class="wsp">
+                <a href="https://www.whatsapp.com/" target="_blank"> <img src="./multimedia/img/logowhat.png" alt="">
+                </a>
+            </div>           
+        </section>
+    </main>
+    
+    <footer>
+        <div class="sticky-footer">                
+                <div class="div__footer">
+                    <p class="copyright">
+                        Todos los derechos reservados<br>
+                      &copy Copyright Grupo CaC - 2023</p>
+                </div>
+            </footer>
+            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+            <script src="./static/js/crud-mascotas-vue.js"></script>
+    
+</body>
+</html>
