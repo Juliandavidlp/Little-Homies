@@ -1,4 +1,4 @@
-# Little-Homies
-Little Homies ~ Una página para ver un catálogo de mascotas en adopción.
+# Little Homies
+Una página para ver un catálogo de mascotas en adopción.
 
 https://refugioperritos.netlify.app/mascotas
